@@ -319,13 +319,13 @@ footer a {
         justify-content: center;
         align-items: center;
         gap: 15px;
-        padding: 10px;
         width: 100%;
         margin: 0 auto;
+        min-height: 250px;
     }
 
     .project {
-        width: 90%;
+        width: 80%;
         margin: 0 auto;
     }
 
