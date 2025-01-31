@@ -21,7 +21,7 @@ const projects = [
         title: "Queen of Diamonds Casino Hire Project",
         image: "images/queenofdiamonds-project.png",
         url: "http://www.queenofdiamondscasino.co.uk",
-        desc: "A website I made for a casino hire service in Doncaster",
+        desc: "A website I made for a casino hire service in Doncaster.",
     }
 ];
 
