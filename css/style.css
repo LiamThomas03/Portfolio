@@ -1,0 +1,329 @@
+/* ============================= */
+/*           VARIABLES           */
+/* ============================= */
+
+:root {
+    --pistachio: #8ed081;
+    --cerulean: #007ea7;
+    --periwinkle: #d8dcff;
+    --space-cadet: #2d3047;
+    --columbia-blue: #c8e0f4;
+}
+
+/* ============================= */
+/*        GENERAL STYLES         */
+/* ============================= */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--columbia-blue);
+    color: var(--space-cadet);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    /* Ensures full height on smaller screens */
+    padding-top: 60px;
+    /* Offsets fixed header */
+}
+
+/* ============================= */
+/*      HEADER & NAVIGATION      */
+/* ============================= */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--cerulean);
+    padding: 15px 0;
+    z-index: 1000;
+    transition: background 0.3s ease;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: var(--periwinkle);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--pistachio);
+}
+
+/* ============================= */
+/*         HERO SECTION          */
+/* ============================= */
+
+.hero {
+    text-align: center;
+    padding: 60px;
+    background: var(--columbia-blue);
+}
+
+.hero h1 {
+    color: var(--space-cadet);
+    font-size: 2.5rem;
+}
+
+.hero h2 {
+    color: var(--cerulean);
+    font-size: 2rem;
+}
+
+.hero p {
+    color: var(--space-cadet);
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+/* Call-to-action button */
+.hero .btn {
+    background: var(--pistachio);
+    color: var(--space-cadet);
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 15px;
+    transition: background 0.3s ease;
+}
+
+.hero .btn:hover {
+    background: var(--cerulean);
+    color: white;
+}
+
+/* Profile picture */
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 20px;
+    border: 3px solid var(--cerulean);
+}
+
+/* ============================= */
+/*      PORTFOLIO SECTION        */
+/* ============================= */
+
+.portfolio {
+    background: var(--columbia-blue);
+    padding: 50px;
+    text-align: center;
+}
+
+.portfolio h2 {
+    color: var(--space-cadet);
+}
+
+.project {
+    display: inline-block;
+    text-decoration: none;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 15px;
+    width: 30%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+    border: 2px solid var(--cerulean);
+}
+
+.project h3 {
+    color: var(--cerulean);
+}
+
+.project a {
+    display: block;
+    color: var(--pistachio);
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.project img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+    display: block;
+}
+
+.project-desc {
+    font-size: 0.9rem;
+    color: var(--space-cadet);
+    text-align: center;
+    margin-top: 5px;
+    line-height: 1.4;
+    padding: 0 10px;
+}
+
+.project a:hover {
+    color: var(--cerulean);
+}
+
+/* ============================= */
+/*       CONTACT SECTION         */
+/* ============================= */
+
+.contact {
+    text-align: center;
+    padding: 50px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+.contact-icon {
+    width: 30px;
+    height: auto;
+    margin-right: 10px;
+}
+
+/* Email link */
+.contact a {
+    font-size: 1.2rem;
+    color: var(--space-cadet);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact a:hover {
+    color: var(--cerulean);
+}
+
+/* ============================= */
+/*        Map Container          */
+/* ============================= */
+.map-container {
+    position: relative;
+    width: 100%;
+    /* Makes the container take full width */
+    max-width: 575px;
+    /* Prevents it from being too wide */
+    margin: 0 auto;
+    /* Centers the map */
+}
+
+.map-container iframe {
+    width: 100%;
+    /* Makes the iframe responsive */
+    height: 350px;
+    /* Adjust height for better mobile view */
+    border: 1px solid black;
+}
+
+/* ============================= */
+/*           FOOTER              */
+/* ============================= */
+
+footer {
+    background: var(--space-cadet);
+    color: var(--periwinkle);
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: var(--periwinkle);
+}
+
+/* ============================= */
+/*        MOBILE STYLES          */
+/* ============================= */
+
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
+    padding: 10px;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+    .profile-pic {
+        width: 120px;
+        height: 120px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: var(--cerulean);
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    #portfolio-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project {
+        width: 90%;
+    }
+
+    .map-container iframe {
+        height: 450px;
+
+    }
+}
