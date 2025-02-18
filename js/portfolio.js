@@ -6,6 +6,12 @@ const projects = [
         desc: "A partnership I founded specialising in website creation.",
     },
     {
+        title: "Cardex",
+        image: "images/cardex-logo.png",
+        url: "https://www.cardex-app.com",
+        desc: "A personal project I developed to track card collections.",
+    },
+    {
         title: "United Homes Website",
         image: "images/utdhomes-project.png",
         url: "https://www.utdhomes.co.uk",
@@ -22,7 +28,7 @@ const projects = [
         image: "images/queenofdiamonds-project.png",
         url: "http://www.queenofdiamondscasino.co.uk",
         desc: "A website I made for a casino hire service in Doncaster.",
-    }
+    },
 ];
 
 document.addEventListener("DOMContentLoaded", function () {
