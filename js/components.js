@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <p>Liam Thomas - ${new Date().getFullYear()}</p>
             <a href="https://www.flaticon.com/free-icons/email" title="email icons">Email icons created by Delwar018 - Flaticon</a>
             <a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by Freepik - Flaticon</a>
+            <a href="https://www.flaticon.com/free-icons/github" title="github icons">Github icons created by Pixel perfect - Flaticon</a>
             <br><a href="https://github.com/LiamThomas03/Portfolio" title="Github Project">Github Project for this website</a>
         </footer>
     `;
